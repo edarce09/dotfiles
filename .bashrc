@@ -125,4 +125,4 @@ set -o vi
 #xmodmap ~/.setups/.speedswapper
 
 source /opt/ros/indigo/setup.bash
-source ~/Repositories/catkin_ws/devel/setup.bash
+source ~/catkin_ws/devel/setup.bash
