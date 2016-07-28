@@ -1,0 +1,9 @@
+[user]
+	name = edarce09
+	email = edarce09@gmail.com
+[color]
+	ui = true
+[core]
+	editor = vim
+[merge]
+	tool = opendiff

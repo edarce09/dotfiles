@@ -1,0 +1,14 @@
+
+#Ignore everything
+*
+
+#But:
+!.bashrc
+!.bash_prompt
+!.bash_aliases
+!.gitconfig
+!.gitignore
+!.vimrc
+!/.setups
+!/.setups/*.sh
+
