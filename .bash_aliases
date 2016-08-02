@@ -1,6 +1,10 @@
 #sudo
 alias sudo="sudo "
 
+#map
+alias map="xmodmap ~/.speedswapper"
+
+
 # Undo a `git push`
 alias g="git"
 alias gs="git status"

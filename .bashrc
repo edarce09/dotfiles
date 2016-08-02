@@ -116,3 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 set -o vi
+
+# Map keys
+#xmodmap ~/.speedswapper
