@@ -1,15 +1,42 @@
+"remaps
+"" map each number to its shift-key character
+inoremap 1 !
+inoremap 2 @
+inoremap 3 #
+inoremap 4 $
+inoremap 5 %
+inoremap 6 ^
+inoremap 7 &
+inoremap 8 *
+inoremap 9 (
+inoremap 0 )
+inoremap - _
+
+" and then the opposite
+ inoremap ! 1
+ inoremap @ 2
+ inoremap # 3
+ inoremap $ 4
+ inoremap % 5
+ inoremap ^ 6
+ inoremap & 7
+ inoremap * 8
+ inoremap ( 9
+ inoremap ) 0
+ inoremap _ -
+ 
 "Tabs stuff---------------------------------------------------------------------
 " Softtabs
-set expandtab 
+set expandtab
 " Indentation length
-set shiftwidth=2 
+set shiftwidth=2
 " Tabs length
 set tabstop=2
 set softtabstop=2
 " ------------------------------------------------------------------------------
 
 " Misc.
-set cpoptions+=$ " Adds a $ to the text you're changing 
+set cpoptions+=$ " Adds a $ to the text you're changing
 set number
 " Color for 80 columns
 execute "set colorcolumn=" . join(range(1,80), ',')
@@ -23,7 +50,7 @@ set autoindent
 ""
 "" Set up:
 "" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-"" 
+""
 """"""""""""""""""""""""""""""""""""""""
 
 " Needed for vundle
