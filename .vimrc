@@ -8,10 +8,9 @@ inoremap 5 %
 inoremap 6 ^
 inoremap 7 &
 inoremap 8 *
-inoremap 9 (
+inoremap 9 ()<Left>
 inoremap 0 )
 inoremap - _
-
 " and then the opposite
  inoremap ! 1
  inoremap @ 2
@@ -24,6 +23,14 @@ inoremap - _
  inoremap ( 9
  inoremap ) 0
  inoremap _ -
+
+"" auto apend 
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
+
+
  
 "Tabs stuff---------------------------------------------------------------------
 " Softtabs
@@ -38,6 +45,7 @@ set softtabstop=2
 " Misc.
 set cpoptions+=$ " Adds a $ to the text you're changing
 set number
+set showmode
 " Color for 80 columns
 execute "set colorcolumn=" . join(range(1,80), ',')
 " Set autoindentencion
