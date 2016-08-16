@@ -48,15 +48,6 @@ runAll(){
   runBack
 }
 
-alias flush="service nscd restart"
-alias front="cd ~/Repositories/Freyja/freyja-admin/"
-alias compile=" ~/Repositories/Freyja/freyja-api/main.js"
-alias back="cd ~/Repositories/Freyja/freyja-api/"
-alias runBack="runBack"
-alias runFront="runFront"
-alias runAll="runAll"
-alias cocks="forever -w ~/Repositories/Freyja/freyja-api/main.js"
-
 #Gulp 
 alias doTest="gulp ~/Repositories/Freyja/Freyja/server-test"
 
@@ -66,3 +57,13 @@ alias v="vim"
 # Monadic Server
 alias kServer="ssh kirsch@server.monadic.solutions"
 
+#Aliases
+alias flush="service nscd restart"
+alias front="cd ~/Repositories/Freyja/freyja-admin/"
+alias compile=" ~/Repositories/Freyja/freyja-api/main.js"
+alias back="cd ~/Repositories/Freyja/freyja-api/"
+alias runBack="runBack"
+alias runFront="runFront"
+alias runAll="runAll"
+alias cocks="forever -w ~/Repositories/Freyja/freyja-api/main.js"
+alias ls="ls -a --color=auto"
