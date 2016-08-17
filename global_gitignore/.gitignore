@@ -1,0 +1,8 @@
+
+#Ignore everything
+*.swp
+*.mp3
+# *.file
+
+#But:
+!*.js

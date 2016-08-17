@@ -5,6 +5,7 @@
 	ui = true
 [core]
 	editor = vim
+	excludesfile = /home/kirsch/global_gitignore/.gitignore
 [merge]
 	tool = opendiff
 [alias]

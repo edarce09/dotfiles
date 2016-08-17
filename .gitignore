@@ -3,6 +3,7 @@
 *
 
 #But:
+!global_gitignore/
 !.bashrc
 !.bash_prompt
 !.bash_aliases
