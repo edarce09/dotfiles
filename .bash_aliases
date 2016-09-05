@@ -2,12 +2,12 @@
 alias sudo="sudo "
 
 #map
-alias map="xmodmap ~/.speedswapper"
+alias map="xmodmap ~/.speedswappers"
 
 
 # Undo a `git push`
 alias g="git"
-alias gs="git status"
+alias gs="git status -s"
 alias undoPush="git push -f origin HEAD^:master"
 alias graphAll="git log --pretty=format:'[%an at:%ad]%s %h' --graph --date short"
 alias graphWeek="git log --pretty=format:'[%an at:%ad]%s %h' --graph --since=1.week.ago --date short" 

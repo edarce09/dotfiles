@@ -10,3 +10,9 @@
 	tool = opendiff
 [alias]
 	pushall = push --recurse-submodule=on-demand
+	lg = log --oneline --decorate --all --graph
+	s = status -s
+[push]
+	default = simple
+[pull]
+	rebase = true

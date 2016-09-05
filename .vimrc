@@ -1,4 +1,8 @@
 "remaps
+"" map - to move down a line and _ move up
+nnoremap - ddp
+nnoremap _ ddkP
+
 "" map each number to its shift-key character
 inoremap 1 !
 inoremap 2 @
@@ -24,14 +28,33 @@ inoremap - _
  inoremap ) 0
  inoremap _ -
 
+" set swp file directory 
+set swapfile
+set dir=~/backup
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
 "" auto apend 
-inoremap { {}<Left>
+inoremap { {<CR><BS>}<Esc>O
 inoremap [ []<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
+"inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+"inoremap ] <Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+"inoremap ) <Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap <exp> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Rigth>" : ")"
 
-
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
  
+let mapleader = " "
+set backspace=2   " Backspace deletes like most programs in insert mode
+
 "Tabs stuff---------------------------------------------------------------------
 " Softtabs
 set expandtab
@@ -40,6 +63,7 @@ set shiftwidth=2
 " Tabs length
 set tabstop=2
 set softtabstop=2
+
 " ------------------------------------------------------------------------------
 
 " Misc.
@@ -49,8 +73,7 @@ set showmode
 " Color for 80 columns
 execute "set colorcolumn=" . join(range(1,80), ',')
 " Set autoindentencion
-set autoindent
-
+  set autoindent
 
 
 """"""""""""""""""""""""""""""""""""""""
