@@ -1,3 +1,18 @@
+"" set Leader
+let mapleader = "\<Space>"
+
+"" personal info
+iabbrev @@ edarce)(2gmail.com
+
+"" common file commands
+nnoremap <Leader>q :q!<cr>
+nnoremap <Leader>w :x<cr>
+
+"" shortcut edit vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source  $MYVIMRC<cr>
+nnoremap <leader>eb :vsplit ~/.bashrc<cr>
+
 "remaps
 "" map - to move down a line and _ move up
 nnoremap - ddp
@@ -12,21 +27,26 @@ inoremap 5 %
 inoremap 6 ^
 inoremap 7 &
 inoremap 8 *
-inoremap 9 ()<Left>
-inoremap 0 )
+inoremap 9 ()<BS>
+inoremap 0 <Esc>/)<cr>a
+inoremap <leader>0 )
 inoremap - _
+
 " and then the opposite
- inoremap ! 1
- inoremap @ 2
- inoremap # 3
- inoremap $ 4
- inoremap % 5
- inoremap ^ 6
- inoremap & 7
- inoremap * 8
- inoremap ( 9
- inoremap ) 0
- inoremap _ -
+inoremap ! 1
+inoremap @ 2
+inoremap # 3
+inoremap $ 4
+inoremap % 5
+inoremap ^ 6
+inoremap & 7
+inoremap * 8
+inoremap ( 9
+inoremap ) 0
+inoremap _ -
+
+" javascript 
+inoremap <leader>log console.log();<Esc><BS><BS>a
 
 " set swp file directory 
 set swapfile
@@ -37,7 +57,8 @@ set splitbelow
 set splitright
 
 "" auto apend 
-inoremap { {<CR><BS>}<Esc>O
+inoremap <leader>{ {<CR><BS>}<Esc>O
+inoremap <leader>} <Esc>/}
 inoremap [ []<Left>
 inoremap ' ''<Left>
 inoremap " ""<Left>
@@ -52,7 +73,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
  
-let mapleader = " "
 set backspace=2   " Backspace deletes like most programs in insert mode
 
 "Tabs stuff---------------------------------------------------------------------

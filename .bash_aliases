@@ -2,7 +2,7 @@
 alias sudo="sudo "
 
 #map
-alias map="xmodmap ~/.speedswappers"
+alias map="xmodmap ~/.setups/.speedwappers"
 
 
 # Undo a `git push`

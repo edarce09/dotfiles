@@ -1,8 +1,9 @@
-cript ejemplo de actualizacion
-#elija su distribucion
-#debian_ubuntu
+# autoactualizacion
+# elija su distribucion
+# debian_ubuntu
+#chmod a+x ~/.setups/updates.sh
 apt_get update & apt_get _y upgrade
-#fedora
+# fedora
 #yum _y update
-#Arch
+# Arch
 #pacman __noconfirm _Syu
