@@ -7,6 +7,7 @@ iabbrev @@ edarce)(2gmail.com
 "" common file commands
 nnoremap <Leader>q :q!<cr>
 nnoremap <Leader>w :x<cr>
+nnoremap <Leader>ss :w<cr>
 
 "" shortcut edit vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -27,10 +28,31 @@ inoremap 5 %
 inoremap 6 ^
 inoremap 7 &
 inoremap 8 *
-inoremap 9 ()<BS>
-inoremap 0 <Esc>/)<cr>a
-inoremap <leader>0 )
-inoremap - _
+inoremap 9 (
+" 0 to ) is in Auto apend
+nnoremap 1 !
+nnoremap 2 @
+nnoremap 3 #
+nnoremap 4 $
+noremap 4 $
+"-------------
+nnoremap 5 %
+nnoremap 6 ^
+nnoremap 7 &
+nnoremap 8 *
+nnoremap 9 (
+nnoremap 0 )
+" visual mode invertion 
+vnoremap 1 !
+vnoremap 2 @
+vnoremap 3 #
+vnoremap 4 $
+vnoremap 5 %
+vnoremap 6 ^
+vnoremap 7 &
+vnoremap 8 *
+vnoremap 9 (
+vnoremap 0 )
 
 " and then the opposite
 inoremap ! 1
@@ -43,29 +65,54 @@ inoremap & 7
 inoremap * 8
 inoremap ( 9
 inoremap ) 0
-inoremap _ -
+nnoremap ! 1
+nnoremap @ 2
+nnoremap # 3
+nnoremap $ 4
+nnoremap % 5
+nnoremap ^ 6
+nnoremap & 7
+nnoremap * 8
+nnoremap ( 9
+nnoremap ) 0
+vnoremap ! 1
+vnoremap @ 2
+vnoremap # 3
+vnoremap $ 4
+vnoremap % 5
+vnoremap ^ 6
+vnoremap & 7
+vnoremap * 8
+vnoremap ( 9
+vnoremap ) 0
 
 " javascript 
 inoremap <leader>log console.log();<Esc><BS><BS>a
-
-" set swp file directory 
-set swapfile
-set dir=~/backup
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
 
-"" auto apend 
+"" Auto apend 
+inoremap <Leader>9 ()<Left>
+inoremap 0 <Esc>/)<cr>a
+inoremap { {}<left>
 inoremap <leader>{ {<CR><BS>}<Esc>O
-inoremap <leader>} <Esc>/}
+inoremap } <Esc>/}
 inoremap [ []<Left>
-inoremap ' ''<Left>
-inoremap " ""<Left>
-"inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
-"inoremap ] <Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
-"inoremap ) <Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel"""
+inoremap <leader>' ''<Left>
+inoremap <leader>" ""<Left>
+inoremap <Leader><< <><leaft>
+"" AutoIndent
+inoremap <Leader>} }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap <Leader>] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap <Leader>0 )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap <exp> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Rigth>" : ")"
+
+" set swp file directory 
+set swapfile
+set dir=~/backup
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
