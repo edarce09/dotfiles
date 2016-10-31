@@ -126,6 +126,3 @@ set -o vi
 
 source /opt/ros/indigo/setup.bash
 source ~/Repositories/catkin_ws/devel/setup.bash
-
-  
->>>>>>> reorder the vimrc
