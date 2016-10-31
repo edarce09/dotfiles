@@ -1,3 +1,55 @@
+" Needed for vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"  alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Git stuff
+Plugin 'tpope/vim-fugitive'
+" Fast markup
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
+" Visual markers +
+Plugin 'kshenoy/vim-signature'
+" Code coloring
+Plugin 'flazz/vim-colorschemes'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'lervag/vim-latex'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+""""""""""""""""""""""""""""""""""""""""
+"" Colorschemes Area! :D
+""
+""""""""""""""""""""""""""""""""""""""""
+syntax on
+set background=dark
+colorscheme solarized
+"" end of vundle """""""""""""""""""""""
+
 "" set Leader
 let mapleader = "\<Space>"
 
@@ -31,6 +83,10 @@ vnoremap 7 &
 vnoremap 8 *
 vnoremap 9 (
 vnoremap 0 )
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 nnoremap 1 !
 nnoremap 2 @
 nnoremap 3 #
@@ -41,6 +97,10 @@ nnoremap 7 &
 nnoremap 8 *
 nnoremap 9 (
 nnoremap 0 )
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 inoremap 1 !
 inoremap 2 @
 inoremap 3 #
@@ -51,6 +111,10 @@ inoremap 7 &
 inoremap 8 *
 inoremap 9 (
 inoremap 0 )
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 cnoremap 1 !
 cnoremap 2 @
 cnoremap 3 #
@@ -61,6 +125,10 @@ cnoremap 7 &
 cnoremap 8 *
 cnoremap 9 (
 cnoremap 0 )
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 onoremap 1 !
 onoremap 2 @ 
 onoremap 3 #
@@ -84,6 +152,10 @@ noremap & 7
 noremap * 8
 noremap ( 9
 noremap ) 0
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 inoremap ! 1
 inoremap @ 2
 inoremap # 3
@@ -94,6 +166,10 @@ inoremap & 7
 inoremap * 8
 inoremap ( 9
 inoremap ) 0
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 cnoremap ! 1
 cnoremap @ 2
 cnoremap # 3
@@ -122,6 +198,10 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel"""
 inoremap <leader>' ''<Left>
 inoremap <leader>" ""<Left>
 inoremap <Leader><< <><leaft>
+<<<<<<< HEAD
+=======
+
+>>>>>>> reorder the vimrc
 "" AutoIndent
 inoremap <Leader>} }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap <Leader>] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
@@ -155,12 +235,22 @@ set softtabstop=2
 set cpoptions+=$ " Adds a $ to the text you're changing
 set number
 set showmode
+<<<<<<< HEAD
 " Color for 80 columns
 execute "set colorcolumn=" . join(range(1,80), ',')
 " Set autoindentencion
   set autoindent
 
 
+=======
+
+" Color for 80 columns
+execute "set colorcolumn=" .join(range(1,80), ',')
+
+" Set autoindentencion
+  set autoindent
+
+>>>>>>> reorder the vimrc
 """"""""""""""""""""""""""""""""""""""""
 "" Vundle
 ""
@@ -168,6 +258,7 @@ execute "set colorcolumn=" . join(range(1,80), ',')
 "" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ""
 """"""""""""""""""""""""""""""""""""""""
+<<<<<<< HEAD
 
 " Needed for vundle
 set nocompatible              " be iMproved, required
@@ -219,3 +310,5 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 colorscheme solarized
+=======
+>>>>>>> reorder the vimrc

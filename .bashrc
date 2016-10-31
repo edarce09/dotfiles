@@ -122,4 +122,10 @@ fi
 set -o vi
 
 # Map keys
-#xmodmap ~/.speedswapper
+#xmodmap ~/.setups/.speedswapper
+
+source /opt/ros/indigo/setup.bash
+source ~/Repositories/catkin_ws/devel/setup.bash
+
+  
+>>>>>>> reorder the vimrc
