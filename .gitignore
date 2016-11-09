@@ -4,6 +4,7 @@
 
 #But:
 !global_gitignore/
+!.vim/*
 !.bashrc
 !.bash_prompt
 !.bash_aliases
