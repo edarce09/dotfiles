@@ -48,6 +48,11 @@ filetype plugin indent on    " required
 syntax on
 set background=dark
 colorscheme solarized
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
 "" end of vundle """""""""""""""""""""""
 
 "" set Leader
