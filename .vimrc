@@ -55,18 +55,23 @@ else
 endif
 "" end of vundle """""""""""""""""""""""
 
+"" start ev
 "" set Leader
 let mapleader = "\<Space>"
 
 "" personal info
 iabbrev @@ edarce)(2gmail.com
 
+"" map esc
+inoremap jk <esc>
+""inoremap <esc> <nop>
+ 
 "" common file commands
 nnoremap <Leader>q :q!<cr>
 nnoremap <Leader>w :x<cr>
 nnoremap <Leader>ss :w<cr>
 
-"" shortcut edit vimrc
+"" shortcut edit vimrc 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source  $MYVIMRC<cr>
 nnoremap <leader>eb :vsplit ~/.bashrc<cr>
