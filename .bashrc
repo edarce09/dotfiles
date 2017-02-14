@@ -125,4 +125,7 @@ set -o vi
 #xmodmap ~/.setups/.speedswapper
 
 source /opt/ros/indigo/setup.bash
-source ~/catkin_ws/devel/setup.bash
+source ~/Repositories/catkin_ws/devel/setup.bash
+ 
+#export ROS_MASTER_URI=http://192.168.1.123:8080
+#export ROS_IP=192.168.1.119

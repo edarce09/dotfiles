@@ -82,97 +82,6 @@ nnoremap - ddp
 nnoremap _ ddkP
 nnoremap <Leader>pwd <esc>:echo<Space>@%<cr>
 
-"" map each number to its shift-key character
-vnoremap 1 !
-vnoremap 2 @ 
-vnoremap 3 #
-vnoremap 4 $
-vnoremap 5 %
-vnoremap 6 ^
-vnoremap 7 &
-vnoremap 8 *
-vnoremap 9 (
-vnoremap 0 )
-
-nnoremap 1 !
-nnoremap 2 @
-nnoremap 3 #
-nnoremap 4 $
-nnoremap 5 %
-nnoremap 6 ^
-nnoremap 7 &
-nnoremap 8 *
-nnoremap 9 (
-nnoremap 0 )
-
-inoremap 1 !
-inoremap 2 @
-inoremap 3 #
-inoremap 4 $
-inoremap 5 %
-inoremap 6 ^
-inoremap 7 &
-inoremap 8 *
-inoremap 9 (
-inoremap 0 )
-
-cnoremap 1 !
-cnoremap 2 @
-cnoremap 3 #
-cnoremap 4 $
-cnoremap 5 %
-cnoremap 6 ^
-cnoremap 7 &
-cnoremap 8 *
-cnoremap 9 (
-cnoremap 0 )
-
-onoremap 1 !
-onoremap 2 @ 
-onoremap 3 #
-onoremap 4 $
-onoremap 5 %
-onoremap 6 ^
-onoremap 7 &
-onoremap 8 *
-onoremap 9 (
-onoremap 0 )
-" 0 to ) is in Auto apend
-
-" and then the opposite
-noremap ! 1
-noremap @ 2
-noremap # 3
-noremap $ 4
-noremap % 5
-noremap ^ 6
-noremap & 7
-noremap * 8
-noremap ( 9
-noremap ) 0
-
-inoremap ! 1
-inoremap @ 2
-inoremap # 3
-inoremap $ 4
-inoremap % 5
-inoremap ^ 6
-inoremap & 7
-inoremap * 8
-inoremap ( 9
-inoremap ) 0
-
-cnoremap ! 1
-cnoremap @ 2
-cnoremap # 3
-cnoremap $ 4
-cnoremap % 5
-cnoremap ^ 6
-cnoremap & 7
-cnoremap * 8
-cnoremap ( 9
-cnoremap ) 0
-
 " javascript 
 inoremap <leader>log console.log();<Esc><BS><BS>a
 
@@ -182,11 +91,12 @@ set splitright
 
 "" Auto apend 
 inoremap <Leader>9 ()<Left>
-inoremap 0 <Esc>/)<cr>a
+""inoremap 0 <Esc>/)<cr>a
 inoremap <Leader>{ {<CR>}<Esc>O
 inoremap } <Esc>/}<CR>
 inoremap [ []<Left>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel"""
+nnoremap <leader>( viw<esc>a)<esc>hbi(<esc>lel"""
 inoremap <leader>' ''<Left>
 inoremap <leader>" ""<Left>
 inoremap <Leader><< <><leaft>
