@@ -5,7 +5,7 @@
 #But:
 !global_gitignore/
 !.vim/*
-!backup/* 
+!backup/readme 
 !.bashrc
 !.bash_prompt
 !.bash_aliases

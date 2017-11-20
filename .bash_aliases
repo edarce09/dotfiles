@@ -1,10 +1,6 @@
 #sudo
 alias sudo="sudo "
 
-#map
-alias map="xmodmap ~/.setups/.speedwappers"
-
-
 # Undo a `git push`
 alias g="git"
 alias gs="git status -s"
@@ -69,3 +65,10 @@ alias cocks="forever -w ~/Repositories/Freyja/freyja-api/main.js"
 alias ls="ls -a --color=auto"
 alias ws="cd ~/Repositories/catkin_ws"
 alias dji_demo="rosrun dji_sdk_demo dji_sdk_client"
+
+
+#map
+alias map="xmodmap ~/.setups/.speedwappers"
+
+#address
+alias nodeangular="cd ~/Documents/Repository/curso-Angular-Node"

@@ -109,7 +109,7 @@ inoremap <exp> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Rigth>" : ")"
 
 " set swp file directory 
 set swapfile
-set dir=~/backup
+set directory=~/backup
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
