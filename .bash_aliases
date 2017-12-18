@@ -15,6 +15,12 @@ alias listAll="echo g-git gs-git_status undoPush-push_origin_Head graphAll graph
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
+# Mongo 
+alias mongoStart='sudo service mongod start'
+alias mongoStop='sudo service mongod stop'
+alias mongoRestart='sudo service mongod restart'
+
+
 # `cat` with beautiful colors. requires Pygments installed.
 alias c='pygmentize -O style=monokai -f console256 -g'
 

@@ -93,7 +93,7 @@ set splitright
 inoremap <Leader>9 ()<Left>
 ""inoremap 0 <Esc>/)<cr>a
 inoremap <Leader>{ {<CR>}<Esc>O
-inoremap } <Esc>/}<CR>
+inoremap <Leader>} <Esc>/}<CR>
 inoremap [ []<Left>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel"""
 nnoremap <leader>( viw<esc>a)<esc>hbi(<esc>lel"""
@@ -102,7 +102,7 @@ inoremap <leader>" ""<Left>
 inoremap <Leader><< <><leaft>
 
 "" AutoIndent
-inoremap <Leader>} }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
+inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap <Leader>] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap <Leader>0 )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 inoremap <exp> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Rigth>" : ")"
