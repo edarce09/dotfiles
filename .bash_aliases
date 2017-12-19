@@ -4,7 +4,7 @@ alias sudo="sudo "
 #git aliases
 alias g="git"
 alias gs="git status -s"
-alias gp"git push origin master"
+alias gp="git push origin master"
 # Undo a `git push`
 alias undoPush="git push -f origin HEAD^:master"
 alias graphAll="git log --pretty=format:'[%an at:%ad]%s %h' --graph --date short"
