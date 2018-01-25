@@ -11,6 +11,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+
+" highlighting
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkHolme/yats.vim'
+Plugin 'othree/yejs.vim'
+
+
 " Git stuff
 Plugin 'tpope/vim-fugitive'
 " Fast markup
