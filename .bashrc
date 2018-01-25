@@ -129,3 +129,6 @@ set -o vi
  
 #export ROS_MASTER_URI=http://192.168.1.123:8080
 #export ROS_IP=192.168.1.119
+
+export NVM_DIR="/home/kirsch/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
