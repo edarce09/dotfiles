@@ -27,6 +27,8 @@ alias mongoRestart='sudo service mongod restart'
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Easier navigation: .., ..., ~ and -
+alias Repository="cd ~/Repository"
+alias mynpm="cd ~/Repository/jsRepos/myNpmDependencies"
 alias ..="cd .."
 alias -- -="cd -"
 alias ...="cd ../.."
@@ -70,7 +72,7 @@ alias runBack="runBack"
 alias runFront="runFront"
 alias runAll="runAll"
 alias cocks="forever -w ~/Repositories/Freyja/freyja-api/main.js"
-alias ls="ls -a --color=auto"
+alias ls="ls -A --color=auto"
 alias ws="cd ~/Repositories/catkin_ws"
 alias dji_demo="rosrun dji_sdk_demo dji_sdk_client"
 
