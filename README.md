@@ -18,3 +18,4 @@ To install from command line: vim +PluginInstall +qall
 
 
 
+"Standarized comment for Readme... first commit"

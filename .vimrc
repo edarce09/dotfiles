@@ -14,6 +14,9 @@ Plugin 'gmarik/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 
+" html autocomplete
+Plugin 'alvan/vim-closetag'
+
 " highlighting
 Plugin 'leafgarland/typescript-vim'
 Plugin 'HerringtonDarkHolme/yats.vim'
